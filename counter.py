@@ -4,7 +4,8 @@ engine = pyttsx3.init();
 engine.setProperty('voice', 'english+f2')
 
 ex_n=int(input("Enter numbr of exercises:"))
-rep_n=int(input("Enter number of repetitions in tha exercise:"))
+rep_n=int(input("Enter number of repetitions in that exercise:"))
+holding=int(input("Enter number of (fast) seconds in that rep:"))
 
 Exercise=[i for i in range(1,ex_n+1)]
 
@@ -13,11 +14,11 @@ Reps=[i for i in range(1,rep_n+1)]
 for E in Exercise:
 	for R in Reps:
 
-		message="Exercise no ",str(E),"Rep number",str(R)
+		message="Exercise no ",str(E)," Rep number ",str(R)
 		message = ''.join(message)
 		print(message) 
 		
-		for i in range(1,11):
+		for i in range(1,holding+1):
 			print(i)
 			engine.say(str(i));
 			engine.runAndWait() ;
