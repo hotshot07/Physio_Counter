@@ -23,14 +23,24 @@ for E in Exercise:
 			engine.say(str(i));
 			engine.runAndWait() ;
 			#Time between 1-2, 2-3, etc.
-			time.sleep(0.2)
+			time.sleep(0.15)
+
+		if(R==15):
+			engine.say('Half Done');
+			engine.runAndWait() ;
+			time.sleep(8)
+
+
 
 
 		#time between two repetitions
 		time.sleep(2)
 
+	engine.say('Exercise Complete');
+	engine.runAndWait() ;
+
 	#time between two exercises
-	time.sleep(10)
+	time.sleep(25)
 
 
 
