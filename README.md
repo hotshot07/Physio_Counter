@@ -1,6 +1,8 @@
 # Physio_Counter
 
-Basically it speaks the one, two... thing during exercise.
+After my knee injury, I was in rehab for 4-5 months and had to perform various physiotherapy exericses.
+After getting bored of saying 1...2....3 in my head, I decicded to use a make a small pythoin script so that I don't have to think about it anymore.
+This script speaks the one, two... thing during exercise.
 It lets the user input total number of exercises and repetition per exercise. Holding in a rep can also be changed.
 
 It currently only works on linux.
